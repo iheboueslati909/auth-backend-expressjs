@@ -11,7 +11,7 @@ async function run() {
   try {
     await mongoose.connect(config.MONGO_URI);
 
-    const roles = ['Admin', 'Editor', 'Author', 'Reader'];
+    const roles = ['Admin', 'Editor', 'Author'];
 
     for (const role of roles) {
       const email = `${role.toLowerCase()}@example.com`;
