@@ -36,7 +36,7 @@ const config = {
 
   // Rate limiting
   RATE_LIMIT_WINDOW_MS: Number(getEnv('RATE_LIMIT_WINDOW_MS', 15 * 60 * 1000)), // 15m
-  RATE_LIMIT_MAX: Number(getEnv('RATE_LIMIT_MAX', 100)),
+  RATE_LIMIT_MAX: Number(getEnv('RATE_LIMIT_MAX', 400)),
 };
 
 // Fail fast for essential secrets in non-dev environments
